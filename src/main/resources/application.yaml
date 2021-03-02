@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+app:
+  flag: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+
+app:
+  flag: false
